@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoTvOutline } from "react-icons/io5";
 
 import { FaFireAlt } from "react-icons/fa";
@@ -12,7 +12,10 @@ import { IoCall } from "react-icons/io5";
 
 import { Link } from "react-router-dom";
 
+import axios from "../../utils/axios";
+
 const Sidenav = () => {
+
   return (
     <div className="w-[20%] h-full border-r-2 border-zinc-400 p-10">
       <h1 className="text-2xl text-white font-bold flex items-center">
